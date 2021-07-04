@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>웹프로그래밍 5일차 과제</title>
         <style>
             body {background-color: whitesmoke;}
@@ -8,7 +9,7 @@
                 color:black; 
                 text-align: center; 
                 font-size: 50px; 
-                margin-top: 30px; 
+                margin-top: 100px; 
                 height: 60px; 
                 font-family: sans-serif;
                 font-weight: bold;
@@ -55,6 +56,14 @@
                 margin-bottom: 20px;
                 box-shadow: 5px 5px 5px gray;
             }
+            li > a:first-child { color : red; }
+            .box{
+                width: 100px;
+                height: 100px;
+                margin:0 20px;
+                padding: 10px 0px;
+                border: 5px solid black;
+            }
         </style>
     </head>
     <body>
@@ -64,13 +73,13 @@
             <div class="question_layout">
                 <div class="question"><a href="#q1"><b>문제 1</b></a></div>
                 <div class="question"><a href="#q2"><b>문제 2</b></a></div>
-                <div class="question"><a href="#"><b>문제 3</b></a></div>
-                <div class="question"><a href="#"><b>문제 4</b></a></div>
-                <div class="question"><a href="#"><b>문제 5</b></a></div>
-                <div class="question"><a href="#"><b>문제 6</b></a></div>
-                <div class="question"><a href="#"><b>문제 7</b></a></div>
-                <div class="question"><a href="#"><b>문제 8</b></a></div>
-                <div class="question"><a href="#"><b>문제 9</b></a></div>
+                <div class="question"><a href="#q3"><b>문제 3</b></a></div>
+                <div class="question"><a href="#q4"><b>문제 4</b></a></div>
+                <div class="question"><a href="#q5"><b>문제 5</b></a></div>
+                <div class="question"><a href="#q6"><b>문제 6</b></a></div>
+                <div class="question"><a href="#q7"><b>문제 7</b></a></div>
+                <div class="question"><a href="#q8"><b>문제 8</b></a></div>
+                <div class="question"><a href="#q9"><b>문제 9</b></a></div>
             </div>
             <div class="solution_layout">
                 <div id="q1" class="solution">
@@ -135,57 +144,112 @@
                 </div>
                 <div id="q3" class="solution">
                     <h3><b>문제3</b></h3>
-                    <table>
-                        <tr>
-                            <td>(1)</td>
-                            <td>header a</td>
-                            <td>:</td>
-                            <td>header의 후손 a태그</td>
-                        </tr>
-                        <tr>
-                            <td>(2)</td>
-                            <td>header > * > h1</td>
-                            <td>:</td>
-                            <td>header의 전체 자손의 자손 h1태그</td>
-                        </tr>
-                        <tr>
-                            <td>(3)</td>
-                            <td>header > div:first-child > a</td>
-                            <td>:</td>
-                            <td>header의 자손중 div태그의 형제 관계에서 첫 번쨰로 등장하는 태그의 자손 a태그</td>
-                        </tr>
-                        <tr>
-                            <td>(4)</td>
-                            <td>header a:first-child</td>
-                            <td>:</td>
-                            <td>header의 자손 a태그의 형제관계중 첫번째로 등장하는 태그</td>
-                        </tr>
-                        <tr>
-                            <td>(5)</td>
-                            <td>div > h1,h2</td>
-                            <td>:</td>
-                            <td>div의 자손중 h1와 h2태그</td>
-                        </tr>
-                        <tr>
-                            <td>(6)</td>
-                            <td>.title.card</td>
-                            <td>:</td>
-                            <td>클래스가 title card 인 태그</td>
-                        </tr>
-                    </table>
+                    <p>
+                        <table>
+                            <tr>
+                                <td>(1)</td>
+                                <td>header a</td>
+                                <td>:</td>
+                                <td>header의 후손 a태그</td>
+                            </tr>
+                            <tr>
+                                <td>(2)</td>
+                                <td>header > * > h1</td>
+                                <td>:</td>
+                                <td>header의 전체 자손의 자손 h1태그</td>
+                            </tr>
+                            <tr>
+                                <td>(3)</td>
+                                <td>header > div:first-child > a</td>
+                                <td>:</td>
+                                <td>header의 자손중 div태그의 형제 관계에서 첫 번쨰로 등장하는 태그의 자손 a태그</td>
+                            </tr>
+                            <tr>
+                                <td>(4)</td>
+                                <td>header a:first-child</td>
+                                <td>:</td>
+                                <td>header의 자손 a태그의 형제관계중 첫번째로 등장하는 태그</td>
+                            </tr>
+                            <tr>
+                                <td>(5)</td>
+                                <td>div > h1,h2</td>
+                                <td>:</td>
+                                <td>div의 자손중 h1와 h2태그</td>
+                            </tr>
+                            <tr>
+                                <td>(6)</td>
+                                <td>.title.card</td>
+                                <td>:</td>
+                                <td>클래스가 title card 인 태그</td>
+                            </tr>
+                        </table>
+                    </p>
                 </div>
                 <div id="q4" class="solution">
                     <h3><b>문제4</b></h3>
-                    <xmp>
-                        <body>
-                            <table>
-                                <tr class="head">
-                                    <td class="head-item">Lorem</td>
-                                    <td class="head-item">Ipsum</td>
-                                </tr>
-                            </table>
-                        </body>
-                    </xmp>
+                    <p>정답 :  .head-item , head head-item , body > head-item</p>
+                </div>
+                <div id="q5" class="solution">
+                    <h3><b>문제5</b></h3>
+                    <p>
+                        <table>
+                            <tr>
+                                <td>(1)</td>
+                                <td>선택자 1번 : header a</td>
+                                <td> : </td>
+                                <td>모든 a태그</td>
+                            </tr>
+                            <tr>
+                                <td>(2)</td>
+                                <td>선택자 2번 : header > * > h1</td>
+                                <td> : </td>
+                                <td>hgruop속 h1태그</td>
+                            </tr>
+                            <tr>
+                                <td>(3)</td>
+                                <td>선택자 3번 : header > * > *:first-child > a</td>
+                                <td> : </td>
+                                <td>a태그중 첫번쨰</td>
+                            </tr>
+                            <tr>
+                                <td>(4)</td>
+                                <td>선택자 4번 : header a:first-child</td>
+                                <td> : </td>
+                                <td>header의 모든 자손들의 a태그의 바로 첫번째</td>
+                            </tr>
+                        </table>
+                    </p>
+                </div>
+                <div id="q6" class="solution">
+                    <h3><b>문제6</b></h3>
+                    <p>정답 :  #first , .active , li:first-child</p>
+                </div>
+                <div id="q7" class="solution">
+                    <h3><b>문제7</b></h3>
+                    코드 실행 
+                    <ul>
+                        <li><a href="#">a 태그</a></li>
+                        <li><a href="#">a 태그</a></li>
+                        <li><a href="#">a 태그</a></li>
+                        <li><a href="#">a 태그</a></li>
+                        <li><a href="#">a 태그</a></li>
+                    </ul>
+                </div>
+                <div id="q8" class="solution">
+                    <h3><b>문제8</b></h3>
+                    <p>
+                        <p>다음 중에서 CSS에서 사용할 수 없는 크기 단위는?</p>
+                        <b>(2)</b> m
+                    </p>
+                </div>
+                <div id="q9" class="solution">
+                    <h3><b>문제9</b></h3>
+                    <div class="box">Example</div>
+                    <p>
+                        총 너비 = 100 + 10 + 5 + 0 = 115(px)<br>
+                        총 높이 = 100 + 0 + 5 + 20 = 125(px)<br>
+                        총 넓이 = 115 * 125 = 14375(px)
+                    </p>
                 </div>
             </div>
         </div>
