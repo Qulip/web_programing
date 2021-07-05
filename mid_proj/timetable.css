@@ -1,0 +1,39 @@
+.layout{
+    width: 96%;
+    margin: 0px 1%;
+    border: solid 1px black;
+    padding: 1%;
+}
+.link_layout{
+    height: 50px;
+    width: 98%;
+    border-bottom: solid 3px black;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+.link{
+    font-size: 30px;
+    font-weight: bold;
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+.table_layout{
+    margin: 2% 0%;
+}
+.table_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 2% 0%;
+}
+.table{
+    width: 750px;
+    margin: auto;
+}
+.blank{
+    background-color: darkgray;
+}
+td{
+    text-align: center;
+}
