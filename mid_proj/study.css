@@ -24,22 +24,23 @@
 a {
     text-decoration: none;
 }
-.table_layout{
-    margin: 2% 0%;
-}
-.table_title{
-    text-align: center;
+.study_title{
+    font-size: 25px;
     font-weight: bold;
-    font-size: 28px;
-    margin: 2% 0%;
+    text-align: center;
+    margin: 0% 30%;
 }
-.table{
-    width: 750px;
-    margin: auto;
-}
-.blank{
-    background-color: darkgray;
+.study_table{
+    font-size: 18px;
+    margin: 1% auto;
 }
 td{
-    text-align: center;
+    width: 100px;
+}
+td > a{
+    color: black;
+}
+td > a:hover {
+    font-size: 20px;
+    color:blue
 }
