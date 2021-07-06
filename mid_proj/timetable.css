@@ -3,6 +3,7 @@
     margin: 0px 1%;
     border: solid 1px black;
     padding: 1%;
+    background-color: whitesmoke;
 }
 .link_layout{
     height: 50px;
@@ -40,6 +41,39 @@ a {
 .blank{
     background-color: darkgray;
 }
-td{
+th{
+    background-color: aliceblue;
+}
+.time{
+    background-color:aliceblue;
+    text-align: center;
+}
+.algorithm{
+    background-color: aquamarine;
+    text-align: center;
+}
+.math{
+    background-color:chartreuse;
+    text-align: center;
+}
+.proj1{
+    background-color: coral;
+    text-align: center;
+}
+.dsp{
+    background-color: cornflowerblue;
+    text-align: center;
+}
+.soft{
+    background-color:goldenrod;
+    text-align: center;
+}
+.proj2{
+    background-color: violet;
+    text-align: center;
+    font-size: 15px;
+}
+.com_architect{
+    background-color: palevioletred;
     text-align: center;
 }
