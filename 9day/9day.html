@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>9day Example</title>
+        <!--<link rel="stylesheet" href="9day.css">-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no,initial-scale=1">
+        <style>
+            h1 {
+            text-align: center;
+            border: 3px solid green;
+            box-shadow: 10px 10px 50px 5px #B0FF3B;
+            text-shadow: 5px 5px 5px gray;
+            padding: 20px;
+        }
+
+        #box {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9e4f7+0,0fb4e7+100;Ble+3D+%235 */
+            background: rgb(169,228,247); /* Old browsers */
+            background: -moz-linear-gradient(top,  rgba(169,228,247,1) 0%, rgba(15,180,231,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+
+        }
+        div.container {
+            overflow: hidden
+        }
+        div.item {
+            float: left;
+            margin: 0 3px;
+            padding: 10px;
+            border : 1px solid black;
+            text-shadow: 5px 5px 5px gray;
+        }
+        .content{
+            width: 500px;
+            height: 300px;
+            border: 3px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+        .circle{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50%;
+        }
+        #red{
+            background: red;
+            left: 20px; top: 20px;
+        }
+        #green{
+            background: green;
+            right: 20px; top: 20px;
+        }
+        #blue{
+            background: blue;
+            right:20px; bottom: 20px;
+        }
+        #yellow {
+            background: yellow;
+            left: 20px; bottom: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="box"><h1>웹 프로그래밍 B688035 유일권</h1></div>
+        <div class="container">
+            <div class="item">메뉴 - 1</div>
+            <div class="item">메뉴 - 2</div>
+            <div class="item">메뉴 - 3</div>
+            <div class="item">메뉴 - 4</div>
+        </div>
+        <h2>Dummy Text</h2>
+        <div class="content">
+            <div class="circle" id="red"></div>
+            <div class="circle" id="green"></div>
+            <div class="circle" id="yellow"></div>
+            <div class="circle" id="blue"></div>
+        </div>
+    </body>
+</html>
