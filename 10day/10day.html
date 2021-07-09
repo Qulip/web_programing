@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>10 일차</title>
+        <script src="10day.js"></script>
+    </head>
+    <body>
+        <div>
+            <form>
+                성적을 입력해 주세요 : 
+                <input type="text" id="score1">
+                <button type="submit" onclick="submit_score()">전송</button>
+            </form>
+        </div>
+        <div id="output"></div>
+    </body>
+    <script>
+        function submit_score(){
+            var score = document.getElementById("score1").value;
+            var rst;
+            //score= parseInt(score);
+            if(score>=95){
+                rst = "A+";
+            }
+            else if(score>=90){
+                rst = "A";
+            }
+            else if(score>=85){
+                rst = "B+";
+            }
+            else if(score>=80){
+                rst = "B";
+            }
+            else if(score>=75){
+                rst = "C+";
+            }
+            else if(score>=70){
+                rst = "C";
+            }
+            else if(score>=65){
+                rst = "D+";
+            }
+            else{
+                rst = "D";
+            }
+            alert("점수는 "+score+" 입니다. 성적은 "+rst+" 입니다.");
+            output.innerText ="점수는 "+score+" 입니다. 성적은 "+rst+" 입니다.";
+            document.write(output.innerText)
+        }
+    </script>
+</html>
